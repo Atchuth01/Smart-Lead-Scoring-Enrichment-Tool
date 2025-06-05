@@ -33,7 +33,7 @@ This is a Streamlit-based interactive web app designed to help businesses score,
    ```bash
    git clone https://github.com/Atchuth01/Smart-Lead-Scoring-Enrichment-Tool.git
    cd Smart-Lead-Scoring-Enrichment-Tool
-```
+  
 
 2. **Create & activate virtual environment**
 
