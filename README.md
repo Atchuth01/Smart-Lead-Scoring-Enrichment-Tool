@@ -33,9 +33,9 @@ This is a Streamlit-based interactive web app designed to help businesses score,
    ```bash
    git clone https://github.com/Atchuth01/Smart-Lead-Scoring-Enrichment-Tool.git
    cd Smart-Lead-Scoring-Enrichment-Tool
-````
+```
 
-2. **Create & activate virtual environment (optional but recommended)**
+2. **Create & activate virtual environment**
 
    ```bash
    python -m venv venv
@@ -102,7 +102,7 @@ This tool can assist sales and marketing teams in lead qualification, data clean
 
 ## License
 
-*Specify your license here (e.g., MIT License)*
+MIT License
 
 ---
 
