@@ -125,7 +125,7 @@ def main():
 
     # Footer
     st.markdown("---")
-    st.caption("🔍 Built by Atchuth Vutukuri for Caprae Capital's AI Pre-Screening Challenge — Empowering smarter lead decisions with AI ✨")
+    st.caption("🔍 Built by Atchuth Vutukuri - Empowering smarter lead decisions with AI ✨")
 
 if __name__ == "__main__":
     main()
