@@ -47,11 +47,19 @@ def main():
     remove_duplicates = st.sidebar.checkbox("Remove duplicate leads", value=True)
 
     # Filter data 
-    filtered_df = df[
-        (df['Industry'].isin(selected_industries)) &
-        ((df['City'].isin(selected_cities)) if selected_cities else True) &
-        (df['Revenue'] >= revenue_range[0]) & (df['Revenue'] <= revenue_range[1])
+    if selected_industries:
+        filtered_df = df[df['Industry'].isin(selected_industries)]
+    else:
+        filtered_df = df.copy()
+
+    if selected_cities:
+        filtered_df = filtered_df[filtered_df['City'].isin(selected_cities)]
+
+    filtered_df = filtered_df[
+        (filtered_df['Revenue'] >= revenue_range[0]) &
+        (filtered_df['Revenue'] <= revenue_range[1])
     ]
+
 
     if remove_duplicates:
         filtered_df = deduplicate_leads(filtered_df)
